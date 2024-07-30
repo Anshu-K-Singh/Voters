@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card text-center content-area">
+    <div class="card-body">
+        <h1 class="display-4 mb-4" style="color: #0072ff;">Welcome To Voters</h1>
+        <p class="lead mb-4">Can you vote?</p>
+        <a class="btn btn-dark btn-lg" href="{% url 'polls:index' %}">
+            View Available Polls
+        </a>
+    </div>
+</div>
+
+{% endblock %}
